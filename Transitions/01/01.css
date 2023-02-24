@@ -1,0 +1,55 @@
+/*basic style*/
+
+body{
+    background-color: #333;
+}
+
+/*box-Transision*/
+
+.box1{
+    background-color: white;
+    height: 200px;
+    width: 200px;
+    position: relative;
+    margin: auto;
+    top: 200px;
+    /*transition-property:background-color, border-radius, transform; */
+
+    transition-property: all;
+    /*You don't want to add each propery seperately it can identify what you add to the element*/
+    
+    /*what are the works that you want to transisit ex---> font size*/
+    transition-duration: 10s; /*duration to transition*/
+   /* transition-delay: 2s;*/
+   transition-timing-function: ease-in;
+   
+}
+
+
+/*in transision user should interact with it so we use hover (when user get mouse to the square the transision will start)*/
+
+.box1:hover{
+    background-color: rgb(22, 237, 11);
+    border-radius: 30%;
+    transform: rotateZ(180deg) rotateX(180deg) rotateY(180deg);
+       /* do many things such as rotations etc.*/ 
+       /*margin: auto auto 200px 500px;*/
+       opacity: 0.5;
+
+
+       
+}
+
+/* transition types
+
+background-position
+max-height
+max-width
+font-size
+font-weight
+color
+line-height
+border-width
+outline-color
+top/bottom/left/right
+*/
