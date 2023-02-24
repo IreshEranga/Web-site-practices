@@ -1,0 +1,100 @@
+/*basic style*/
+body{
+    background-color: #333;
+}
+
+/*box-animation*/
+/*create a box using box element*/
+.box1{
+    background-color: white;
+    height: 200px;
+    width: 200px;
+    position: relative;
+    animation-name: sampleanimation; /*animation name can use any name*/
+    animation-duration: 4s; /*animation duration*/
+    animation-iteration-count: infinite; /*animation repeat moments*/
+    animation-delay: 2s;/*time that animation wait to start*/
+    animation-direction: alternate; /*animation direction*/
+    animation-timing-function: ease-in; /*speed of animation*/
+    animation-fill-mode: forwards;
+}
+
+
+/*key frames with movements*/   /*for key frames without movements you have to delete left top margins*/
+/*give instructions to do */
+@keyframes sampleanimation{
+    0%{
+        background-color: white;
+        left: 0px;
+        top: 0px;
+        opacity: 0.2;
+    }
+    25%{
+        background-color: aqua;
+        left: 0px;
+        top: 250px;
+        border-radius: 10%;
+        opacity: 0.5;
+    }
+    50%{
+        background-color: crimson;
+        left: 250px;
+        top: 250px;
+        border-radius: 25%;
+        opacity: 0.6;
+    }
+    75%{
+        background-color: darkgreen;
+        left: 250px;
+        top: 0px;
+        border-radius: 37%;
+        opacity: 0.8;
+    }
+    100%{
+        background-color: rgb(97, 31, 204);
+        left: 0px;
+        top: 0px;
+        border-radius: 50%;
+        opacity: 1;
+    }
+}
+
+
+.box2{
+    background-color: white;
+    position: relative;
+    margin: 300px 50px 50px 500px;
+    width: 200px;
+    height: 200px;
+    animation: simpleani 8s ease-in 2s infinite alternate ;
+}
+
+/*animation without movements*/
+@keyframes simpleani{
+    0%{
+        background-color: white;
+        border-radius: 0%;
+        opacity: 0.2;
+    }
+    25%{
+        background-color: rgb(77, 220, 11);
+        border-radius: 5%;
+        opacity: 0.4;
+    }
+    50%{
+        background-color: rgb(208, 32, 182);
+        border-radius: 15%;
+        opacity: 0.6;
+    }
+    75%{
+        background-color: rgb(40, 72, 216);
+        border-radius: 30%;
+        opacity: 0.8;
+    }
+    100%{
+        background-color: rgba(220, 23, 23, 0.591);
+        border-radius: 55%;
+        opacity: 1;
+    }
+}
+
