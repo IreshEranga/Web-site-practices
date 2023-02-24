@@ -1,0 +1,202 @@
+/*reset*/
+*{
+    margin: 0;
+    padding: 0;
+}
+
+/*body*/
+body{
+    background-color: gray;
+    color: white;
+}
+
+/*header*/
+.container{
+    
+    background-color: aquamarine;
+    padding: 10px;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 999;
+}
+
+.name{
+    text-align: left;
+    margin: auto;
+    font-size: 20px;
+    font-weight: 900;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+/*navigation bar*/
+.navbar{
+    text-align: right;
+    margin-right:95px;
+    font-size: 20px;
+    margin-bottom: 5px;
+    cursor: pointer;
+    padding-right: 15px;
+    color: black;
+}
+
+/*navigation bar lists */
+.navbar a{ 
+    display: inline-block;
+    padding-right: 15px;
+    color: black;
+    text-decoration: none;
+}
+
+/*logo*/
+.logo{
+    
+    position:relative ;
+    padding-top: 100px;
+    display: inline-block;
+    height: 100px;
+    width: 100px;
+    margin: 200px 150px 0 650px;
+    /*margin-top: 100px;
+    margin-left: 500px;*/
+    border: 3px rgb(12, 21, 13) solid;
+    border-radius: 60%;
+    padding: 20px;
+    background-color: white;
+
+    /*animation*/
+    animation: logo;
+    animation-duration: 4s;
+    animation-fill-mode: forwards;
+
+    /*transition*/
+    transition: background-color;
+    transition-duration: 1s;
+}
+.logo:hover{
+    background-color: yellow;
+}
+
+
+.logo img{
+    margin-top: 12px;
+    width: 100%;
+    border-radius: 15%;
+}
+/*keyframe for logo animation*/
+
+@keyframes logo{
+    0%{
+        transform: scaleX(0) scaleY(0);
+    }
+    100%{
+        transform: scaleX(2) scaleY(2);
+    }
+}
+
+/*name1*/
+
+.name1{
+    padding: 70px 400px 0 500px;
+    text-align: center;
+
+}
+
+.name1 h1{
+    color: white;
+    font-size: 50px;
+    line-height: 1.3em;
+    position: relative;
+
+    /*animation for name1*/
+
+    animation: ani1;
+    animation-duration: 4s;
+    animation-fill-mode: forwards;
+    animation-delay: 0s;
+}
+
+/*keyframes to name1 animations*/
+
+@keyframes ani1{
+    0%{
+        top: -500px;
+    }
+    100%{
+        top: 30px;
+    }
+}
+
+.name1 h1 span{
+    color: gray;
+    background-color: white;
+    padding: 0.5rem 1.5rem;
+    height: 300px;
+}
+
+/*description*/
+
+.des{
+    text-align: center;
+    padding-top: 60px;
+    font-size:35px;
+    margin: 5%;
+    position: relative;
+
+    /*animation for des*/
+    animation: des;
+    animation-duration: 4s;
+    animation-fill-mode: forwards;
+}
+
+
+@keyframes des{
+    0%{
+        bottom: -1000px;
+    }
+    100%{
+       bottom: 80px;
+    }
+}
+
+/*button*/
+
+.btn{
+    text-decoration: none;
+    color: white;
+    border: 1px white solid;
+    display: inline-block;
+    padding: 1rem  2rem;
+    font-size: 20px;
+    position: relative;
+    opacity: 0;
+    top: -10px;
+    
+    margin-left: 720px;
+
+    /*animation for button*/
+
+    animation: btn1;
+    animation-duration: 4s;
+    animation-delay: 4s;
+    animation-fill-mode: forwards;
+
+    /*transition*/
+    transition: background-color, transform, color;
+    transition-duration: 2s, 1s, 1s;
+}
+
+.btn:hover{
+    background-color:white;
+    color: gray;
+    transform: scaleX(1.5) scaleY(1.5);
+}
+
+@keyframes btn1{
+    0%{
+        opacity: 0;
+    }
+    100%{
+        opacity: 1;
+    }
+}
