@@ -1,0 +1,61 @@
+/*basic style*/
+
+.container1 > div, .container2 > div, .container3 > div{
+    border: 1px black solid;
+    padding: 10px;
+    background-color: rgb(210, 199, 199);
+    color: black;
+    font-family: Arial, Helvetica, sans-serif;
+}
+/*from main pixel to 700px can access these css but if the resolution low to 700px this css can't access */
+@media(min-width:700px){
+    /*flexbox*/
+ .container1{
+    display: flex;
+    /*flex-direction:row;*/
+    align-items: flex-start; /*cut the unwanted spaces in flex boxes*/
+    align-items: center;
+    align-items: stretch;
+}
+
+.container2{
+    display: flex;
+    justify-content: flex-end;
+    justify-content: center;
+    justify-content: space-around;
+    justify-content: space-between;
+    
+}
+}
+
+.container3{
+    display: flex;
+    flex-wrap: wrap; /*reduce the boxes in a row according to the width changes*/
+    justify-content: center;
+    justify-content: space-evenly;  /*every spaces same*/
+}
+
+.c-2-box{
+    /*width: 28%;*/
+    flex-basis: 28%;
+}
+
+.box1{
+    flex: 1;
+    order: 2;       /*can change box orders*/
+    
+}
+
+.box2{
+    flex: 2;
+    order: 3;
+}
+
+.box3{
+flex: 1;
+order: 1;
+}
+
+.c-3-box{
+    flex-basis: 10%;
+}
