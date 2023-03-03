@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DOM</title>
+    <link rel="stylesheet" href="style.css">
+    
+</head>
+<body>
+    
+    <!--Navigation-->
+    <nav id="navbar">
+        <h2 id="hdt">Shopping List</h2>
+    </nav>
+    <!--Container-->
+    <div class="container">
+        <h3 id="tx">Shopping Item List</h3>
+        <div class="frm">
+            <h3 id="frmt">Add Items</h3>
+            <form action="">
+                <input type="text">
+                <select>
+                    <option value="red">Red</option>
+                    <option value="green">Green</option>
+                    <option value="blue">Blue</option>
+                    <option value="yellow">Yellow</option>
+                </select>
+                <button type="submit">Submit</button>
+            </form>
+            <div id="out"></div>
+        </div>
+        <div class="list">
+            <h3>Shopping Items</h3>
+            <ul id="li-items">
+                <li class="items">Item 01</li>
+                <li class="items">Item 02</li>
+                <li class="items">Item 03</li>
+                <li class="items">Item 04</li>
+                <li class="items">Item 05</li>
+            </ul>
+            <div>
+                <h2>Testing</h2>
+            </div>
+         <!--Internal
+
+                <button onclick="btnClick(this.textContent)">Click Here</button>
+
+        -->   
+        <div id="output"></div>
+        <div>
+            <button id="c-btn">Click Here</button>
+            <button id="i-btn">Change items</button>
+            <button id="e-btn" class="sample btn kvc">Sample Button</button>
+        </div>
+
+       
+    </div>
+    <div class="bc">
+         <!--Bubling and capture-->
+         <div id="mydiv1">
+            <h2>Bubling</h2>
+            <p id="myP1">Click Me</p>
+        </div><br>
+        <div id="mydiv2">
+            <h2>Capturing</h2>
+            <p id="myP2">Click Me</p>
+        </div><br>
+        <!--remove event listners-->
+        <button id="ev-btn">Click the button</button>
+        <button id="rm-btn">Remove the event</button>
+
+        <!--Event types-->
+        <button id="t-btn">Events</button>
+    </div>
+    <script src="script1.js"></script>
+    <script src="script2.js"></script>
+    <script src="script3.js"></script>
+</body>
+</html>
